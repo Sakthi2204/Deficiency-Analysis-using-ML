@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.menu {
+  margin-bottom: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu ul li button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.content {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+}
+
+.homeContent,
+.aboutContent,
+.contactContent,
+.queriesContent,
+.predictionsContent {
+  display: none;
+  background-color: #f7f7f7; /* Mild color for content background */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.active {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.queriesContent ul li {
+  counter-increment: list;
+}
+
+.queriesContent ul li::before {
+  content: counter(list) ". ";
+  font-weight: bold;
+}
+
+
+
